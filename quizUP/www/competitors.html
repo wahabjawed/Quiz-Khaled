@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CategoryList</title>
+<link href="jquery.mobile-1.4.0/jquery.mobile-1.4.0.css" rel="stylesheet" type="text/css">
+<link href="jquery.mobile-1.4.0/jquery.mobile.structure-1.4.0.css" rel="stylesheet" type="text/css">
+<link href="jquery.mobile-1.4.0/jquery.mobile.icons-1.4.0.css" rel="stylesheet" type="text/css">
+<link href="jquery.mobile-1.4.0/jquery.mobile.inline-svg-1.4.0.css" rel="stylesheet" type="text/css">
+<link href="jquery.mobile-1.4.0/imagecircular.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+<script src="jquery.mobile-1.4.0/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.4.0/jquery.mobile-1.4.0.js" type="text/javascript"></script>
+
+<script id="panel-init">
+		$(function() {
+			$( "body>[data-role='panel']" ).panel();
+		});
+	</script>
+    
+</head>
+<body>
+    <style>
+			
+			#btn-pos{
+				float:right;
+				float:top;
+				margin-top:-60px;	
+			}
+				
+	</style>
+
+
+<div data-role="page" id="page">
+  <div data-role="header" style="background-color:#000000">
+
+    <h2 style="color:#FFFFFF">All Topics</h2>
+    <a href="#leftpanel3" data-icon="bars" data-iconpos="notext">Menu</a> </div>
+
+	<div role="main">
+
+<div style="padding:18px; padding-top:2px; background-color:#cc0000;text-align:center">
+      <form class="ui-filterable">
+        <input id="filterCategory" data-type="search">
+      </form>
+      <h2 style="color:#FFFFFF">Quiz up Friends</h2>
+      <div  data-role="listview" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-filter="true" data-input="#filterCategory">
+      
+        <ul data-role="listview" data-inset="false"
+         >
+         
+          <li style="white-space:normal;">
+          
+   <img class="img-circular" Image goes here. src="img/alu.jpg"/><h2>ALI</h2>
+         <p> C++ expert </p>
+          <fieldset data-role="fieldcontain" id="btn-pos"><input type="button" id="btn-pos" value="Challenge" data-inline="true"  /></fieldset>
+          </li>
+          <li style="white-space:normal;">
+          
+   <img class="img-circular" Image goes here. src="img/alu.jpg"/><h3>Zohair</h3>
+          <p> C++ expert </p>
+          
+          <fieldset data-role="fieldcontain" id="btn-pos"><input type="button" id="btn-pos" value="Challenge" data-inline="true" class="challengeButton" /></fieldset>
+         </li>
+
+           <li style="white-space:normal;">
+          
+   <img class="img-circular" Image goes here. src="img/alu.jpg"/>
+   <h2>Khaled</h2>
+         <p> C++ expert </p>
+          <fieldset data-role="fieldcontain" id="btn-pos"><input type="button" id="btn-pos" value="Challenge" data-inline="true"  /></fieldset>
+          </li>
+           <li style="white-space:normal;">
+          
+   <img class="img-circular" Image goes here. src="img/alu.jpg"/><h2>Zainu</h2>
+         <p> nothing </p>
+          <fieldset data-role="fieldcontain" id="btn-pos"><input type="button" id="btn-pos" value="Challenge" data-inline="true"  /></fieldset>
+          </li>
+           <li style="white-space:normal;">
+          
+   <img class="img-circular" Image goes here. src=		"img/alu.jpg"/>
+   <h2>Abdul Wahab</h2>
+         <p> All in one </p>
+          <fieldset data-role="fieldcontain" id="btn-pos"><input type="button" id="btn-pos" value="Challenge" data-inline="true"  /></fieldset>
+          </li>
+           <li style="white-space:normal;">
+          
+   <img class="img-circular" Image goes here. src="img/alu.jpg"/>
+   <h2>ALI</h2>
+         <p> C++ expert </p>
+          <fieldset data-role="fieldcontain" id="btn-pos"><input type="button" id="btn-pos" value="Challenge" data-inline="true"  /></fieldset>
+          </li>
+          <li style="white-space:normal;">
+          
+   <img class="img-circular" Image goes here. src="img/alu.jpg"/>
+   
+          <h2>Zohair</h2>
+         <p> CSS-expert </p>
+        
+        <fieldset data-role="fieldcontain" id="btn-pos"><input type="button" id="btn-pos" value="Challenge" data-inline="true" /></fieldset>
+         
+</li>
+        </ul>
+      </div>
+      
+      
+    </div>
+    
+  </div><!-- /content -->
+
+
+	<!-- leftpanel3  -->
+	<div data-role="panel" id="leftpanel3" data-position="left" data-display="overlay" data-theme="b">
+
+  <ul data-role="listview">
+    <li data-role="list-divider">Profile</li>
+   <li data-icon="false"><a href="#"><img src="img/alu.jpg" alt="France" class="ui-li-icon ui-corner-none">Ali Inam</a></li>
+    <li data-icon="false"><a href="#">Inbox <span class="ui-li-count">40</span></a></li>
+    <li data-icon="false"><a href="#">Request <span class="ui-li-count">4</span></a></li>
+    <li data-icon="false"><a href="#">Statistics </a></li>
+     <li data-role="list-divider">Setting</li>
+    <li data-icon="false"><a href="#">Account </a></li>
+    <li data-icon="false"><a href="#">Privacy </a></li>
+     
+
+  </ul>
+
+	</div><!-- /leftpanel3 -->
+
+</div><!-- /page -->
+
+
+
+
+
+</body>
+</html>
